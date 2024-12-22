@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCoder-hevan-programer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+/* Help Section Styling */
+/* Help Section Styling */
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 46%, rgba(253,187,45,1) 100%);
+}
+.help-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.help-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.help-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.faq-section, .contact-section, .support-links {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+.support-links{
+    margin-top: 30px;
+
+}
+
+
+.faq-section ul, .support-links ul {
+  padding-left: 20px;
+}
+
+.faq-section li, .support-links li {
+  margin-bottom: 15px;
+}
+
+.contact-section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea, .contact-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1abc9c;
+}
+
+.support-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.support-links li a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.support-links li a:hover {
+  color: #1abc9c;
+}
+
+    </style>
+</head>
+<body>
+    <!-- navvar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border  data-bs-theme=" bg-dark" ">
+
+        <div class=" container-fluid">
+        <a class="navbar-brand" href="index.html">iCoder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Topic
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="web.html">web devlopment</a></li>
+                        <li><a class="dropdown-item" href="ai.html">AI learnning</a></li>
+                        <li>
+                            <hr class="dropdown-divider ">
+                        </li>
+                        <li><a class="dropdown-item " href="#">Something else here</a></li>
+
+                    </ul>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Contact us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <!-- HTML: Help & Support Section -->
+<section id="help-section" class="help-container">
+    <h2>Help & Support</h2>
+    <p>Welcome to the Help Center! Whether you're looking for answers or need assistance, we've got you covered.</p>
+  
+    <div class="help-content">
+      <!-- FAQs Section -->
+      <div class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+          <li><strong>Q:</strong> How do I subscribe to the vlog?  
+              <br><strong>A:</strong> Click the "Subscribe" button on the homepage or any vlog page to stay updated.</li>
+          <li><strong>Q:</strong> How do I reset my password?  
+              <br><strong>A:</strong> Go to the login page, click "Forgot Password," and follow the instructions.</li>
+          <li><strong>Q:</strong> Can I share the vlogs with my friends?  
+              <br><strong>A:</strong> Yes! Use the share button under each vlog to post on social media.</li>
+          <li><strong>Q:</strong> Where can I find the latest vlogs?  
+              <br><strong>A:</strong> Check the "Latest" section on the homepage or the "All Vlogs" page.</li>
+        </ul>
+      </div>
+  
+      <!-- Contact Form Section -->
+      <div class="contact-section">
+        <h3>Contact Us</h3>
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+  
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+  
+          <label for="issue">Issue Type</label>
+          <select id="issue" name="issue" required>
+            <option value="technical">Technical Issue</option>
+            <option value="subscription">Subscription Issue</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+  
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Describe your issue here..." rows="5" required></textarea>
+  
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Support Links Section -->
+    <div class="support-links">
+      <h3>Additional Resources</h3>
+      <ul>
+        <li><a href="/guides" target="_blank">User Guides</a></li>
+        <li><a href="/community" target="_blank">Community Forums</a></li>
+        <li><a href="/terms" target="_blank">Terms & Conditions</a></li>
+        <li><a href="/privacy" target="_blank">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </section>
+  
+          
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>

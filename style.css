@@ -1,0 +1,36 @@
+.navbar-brand{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+  
+}
+.navbar{
+    background: black;
+    filter: invert(1);
+    color: white;
+    border: 2px solid white;
+    position:relative;
+}
+.navbar .nav-item :hover{
+    font-weight: dark;
+    color: black;
+}
+.nav-item .dropdown {
+   color: black;
+}
+.carousel-item img{
+  height: 50%;
+  object-fit: contain;
+}
+#card6{
+ image-rendering: auto;
+ object-fit: contain;
+ 
+}
+.col .container .card> img{
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: rgb(121, 119, 119);
+
+}
+

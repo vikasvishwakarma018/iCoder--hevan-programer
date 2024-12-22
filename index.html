@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iCoder-hevan-programer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .img-slide {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border  data-bs-theme=" bg-dark" " >
+
+        <div class=" container-fluid">
+    <a class="navbar-brand" href="index.html" ><strong style="color: #5a7e04;">iCoder</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="index.html" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Topic
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="web.html">web devlopment</a></li>
+            <li><a class="dropdown-item" href="ai.html">AI learnning</a></li>
+            <li>
+              <hr class="dropdown-divider ">
+            </li>
+            <li><a class="dropdown-item " href="somthing.html">Something else here</a></li>
+
+          </ul>
+
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#sign-upModal">Sign up</button>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- login modal -->
+   <!-- Button trigger modal -->
+
+
+<!-- login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">login to iCoder</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sign up modal  -->
+
+<div class="modal fade" id="sign-upModal" tabindex="-1" aria-labelledby="sign-upLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="sign-upLabel">Sign up </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <!-- form  -->
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Conform Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">create</button>
+    </form>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+  <div class="slider">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner container">
+        <div class="carousel-item active" style="height:20%; width: 100%;">
+          <img
+            src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            class="d-block  w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1607798748738-b15c40d33d57?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            class="d-block w-100  " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1hY2Jvb2slMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
+            class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Welcome to iCoder</h3>
+            <p>Web devlopement, vloging , technology</p>
+
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <br>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img
+            src="https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.webp?a=1&b=1&s=612x612&w=0&k=20&c=tYuiZwlaXjvdPwGxjZbQBdtcgG_i3SambRbsaGuW1jM="
+            alt="">
+          <div class="card-body">
+            <p class="card-text"><strong>The question of whether a computer can think is no more interesting than the
+                question of whether a submarine can swim.</strong> </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img
+            src="https://media.istockphoto.com/id/1164885370/photo/making-a-few-adjustments-to-the-code.webp?a=1&b=1&s=612x612&w=0&k=20&c=b0gPYJKWeOk3mJVH59-rQUHNUM1spEwNnXtDgUxdiW8="
+            alt="">
+          <div class="card-body">
+            <p class="card-text"><strong>Machine learning will automate jobs that most people thought could only be done
+                by people.</strong>.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="" srcset="">
+          <div class="card-body">
+            <p class="card-text"><strong>Artificial Intelligence is the new electricity." – Andrew Ng</strong></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col container">
+        <div class="card shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hY2Jvb2slMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
+            alt="">
+          <div class="card-body">
+            <p class="card-text"><strong>The real question is, when will we draft an artificial intelligence bill of
+                rights? What will that consist of? And who will get to decide that?" – Gray Scott
+            </strong></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card shadow-sm">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1676637656166-cb7b3a43b81a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl8ZW58MHx8MHx8fDA%3D"
+            alt="">
+          <div class="card-body">
+            <p class="card-text"><strong>"The future is here, and it’s powered by AI and machine learning.
+              -   This is the new for the Ai & Ml ALll the future of  a Ai Web devlopement and technology "</strong>.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col container" id="card6">
+        <div class="card shadow-sm img-fluid">
+          <img
+            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+          <div class="card-body">
+            <p class="card-text"><strong>Any sufficiently advanced technology is indistinguishable from magic." – Arthur
+                C. Clarke</strong>.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+          <p class="lead my-3"><strong>"We are changing the world with technology." – Bill Gates</strong>.</p>
+          <p class="lead mb-0"><a href="https://dlabs.ai/blog/top-ai-blogs-and-websites-to-follow/"  class="text-body-emphasis fw-bold ">Continue reading...</a></p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- container for the Ai web devlpement -->
+  <div class="container">
+    <main>
+
+      <div class="container marketing">
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                class="text-body-secondary">It’ll blow your mind.</span></h2>
+            <p class="lead" ></p> in this vlog, I'll share some tips, insights, and personal experiences that have helped me stay motivated and consistent. Let's gear up for a journey filled with inspiration, actionable advice, and, of course, a glimpse into my daily life. Let's make progress together—one step at a time!"</p>
+          </div>
+          <div class="col-md-5">
+            <img class="img-slide"
+              src="https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D"
+              alt="pic2">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See
+                for yourself.</span></h2>
+            <p class="lead">we're diving into a topic that's been on my mind lately: personal growth and balancing life's ambitions. Whether it's chasing fitness goals, excelling in academics, or mastering new skills like coding, the journey can be as rewarding as the destination..</p>
+          </div>
+
+          <div class="col-md-5">
+            <img class="img-slide"
+              src="https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fHw%3D"
+              </div>
+          </div>
+
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                class="text-body-secondary">Checkmate.</span></h2>
+            <p class="lead">good think for the all vlog multiple things like <strong>Home About Conntect us </strong> And the other componets are help for this vlog Your content.
+              I've been following a structured routine that has transformed not just my productivity but also my outlook on life. From starting my day with a refreshing morning run to winding it down with focused coding sessions, every step feels like a brick laid on the path to success.</p>
+          </div>
+          <div class="col-md-5">
+
+            <img class="img-slide"
+              src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D"
+              alt="pic2">
+          </div>
+        </div>
+      </div>
+
+
+
+      <hr class="featurette-divider">
+
+  </div>
+
+  </main>
+  </div>
+  
+  <!-- footer -->
+  <div class="container my-5">
+
+
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+
+      <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+
+          <div class="row mt-3">
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+              <h6 class="text-uppercase fw-bold">Vlog name</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <h3 style="color: rgb(247, 53, 53); justify-content: center;">iCoder-hevan programer vlog</h3>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>Hyy This is The Site of
+                <strong style="color:rgb(212, 28, 222);" class="text-uppercase">vikas vishwakarma</strong> the vlogger
+                and web developer
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold ">Products</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto "
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="index.html" class="text-white">Vlog</a>
+              </p>
+              <p>
+                <a href="https://github.com/vikasvishwakarma018/Enimated-Scroller-Protfolio" target="_blank"
+                  class="text-white">personal-protfolio</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">bootstrap</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Bootstrap Angular</a>
+              </p>
+            </div>
+
+
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px " />
+              <p>
+                <a href="https://github.com/vikasvishwakarma018" target="_blank" class="text-white">GitHub-Ac</a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/vikas-vishwakarma-3188a9334/" target="_blank"
+                  class="text-white">linkedin-Ac</a>
+              </p>
+              <p>
+                <a href="https://www.instagram.com/vikas___v18/" target="_blank" class="text-white">instagram-Ac</a>
+              </p>
+              <p>
+                <a href="help.html" target="_blank" class="text-white">Help</a>
+              </p>
+            </div>
+
+
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p><i class="fas fa-home mr-3"></i> India, Madhya-pradesh , khandwa</p>
+              <p><i class="fas fa-envelope mr-3"></i> vvis9199@gmail.com</p>
+              <p><i class="fas fa-phone mr-3 "></i> + 91 7440-4880-68</p>
+              <!-- <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p> -->
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024-25 Copyright:
+        <a class="text-white" href="index.html">iCoder</a>
+      </div>
+
+    </footer>
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
