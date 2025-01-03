@@ -15,7 +15,8 @@
 ```
 this is the footer for the vlog
 ```
-https://github.com/user-attachments/assets/7dfecd07-f914-41c1-bc76-c4445e2f6976
+![Screenshot 2025-01-03 151125](https://github.com/user-attachments/assets/6a7d838c-3fec-44d8-bf04-fdb53912a955)
+
 ```
 responsive the site this is the curent open in the mobile and all other divice
 ```
